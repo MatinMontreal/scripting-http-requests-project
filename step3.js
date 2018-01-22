@@ -10,9 +10,9 @@ var https = require('https');
 
 
 
-function getAndPrintHTML() {
-
+function getAndPrintHTML(options) {
   var options = requestOptions;
+
   var appendedString = '';
 
   /* Add your code here */
