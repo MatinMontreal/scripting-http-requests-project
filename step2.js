@@ -4,7 +4,7 @@
 // and then console.log the data once all of the data has been received.
 // Buffering in this context means the technique you've used before (usually in loops or conditionals)
 // of creating an empty variable and adding data to it.
-
+//
 
 
 
