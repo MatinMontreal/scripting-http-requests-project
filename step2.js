@@ -17,7 +17,7 @@ function getAndPrintHTML() {
     path: '/http-examples/step1.html',
   };
 
-  var appendedString = "";
+  var appendedString = '';
 
   /* Add your code here */
   https.get(requestOptions, function(response) {
@@ -25,20 +25,11 @@ function getAndPrintHTML() {
       appendedString += data;
     });
 
-    response.on('end', function (data) {
+    response.on('end', function(data) {
       console.log(appendedString);
     });
-
-
   });
-
-
-
-
-
-
 }
-
 
 console.log(getAndPrintHTML());
 
