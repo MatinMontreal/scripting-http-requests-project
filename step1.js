@@ -35,26 +35,20 @@
 // This function should console.log each chunk of data as it is received, concatenated with a newline character ('\n') so you can visualize each chunk.
 // Remember in this and each subsequent Step - you will always need to invoke (call) the function you wrote.
 
- var https = require ('https');
+var https = require('https');
 
-function getAndPrintHTMLChunks () {
-
-
-
+function getAndPrintHTMLChunks() {
   var requestOptions = {
     host: 'sytantris.github.io',
-    path: '/http-examples/step1.html'
+    path: '/http-examples/step1.html',
   };
 
   /* Add your code here */
-  https.get(requestOptions, function (response) {
-
-    response.on('data', function (data) {
-    console.log(data + '\n');
+  https.get(requestOptions, function(response) {
+    response.on('data', function(data) {
+      console.log(data + '\n');
     });
-
   });
-
 }
 
 console.log(getAndPrintHTMLChunks());
